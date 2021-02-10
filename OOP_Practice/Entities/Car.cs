@@ -5,24 +5,20 @@ namespace OOP_Practice.Entities
 {
     public class Car : ICar
     {
-        public void Move()
-        {
-            Console.WriteLine("Car move");
-        }
+        public string Model { get; set; }
 
-        public void Park()
-        {
-            Console.WriteLine("Car park");
-        }
+        public int Speed { get; set; }
 
-        public void Refuel()
-        {
-            Console.WriteLine("Car refuel");
-        }
+        public int CurrentFuel { get; set; }
 
-        public void Repair()
-        {
-            Console.WriteLine("Car repair");
-        }
+        public void Move() => Console.WriteLine("Car move");
+
+        public void Park() => Console.WriteLine("Car park");
+
+        public void Refuel() => Console.WriteLine("Car refuel");
+
+        public void Repair() => Console.WriteLine("Car repair");
+
+        public override string ToString() => string.Join(' ', "Car", Model);
     }
 }

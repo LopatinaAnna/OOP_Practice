@@ -3,5 +3,7 @@
     public interface IPlane : ITransport
     {
         void Repair();
+
+        void BaggageDrop();
     }
 }

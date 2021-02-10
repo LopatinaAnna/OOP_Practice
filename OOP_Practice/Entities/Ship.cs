@@ -5,24 +5,20 @@ namespace OOP_Practice.Entities
 {
     public class Ship : IShip
     {
-        public void Move()
-        {
-            Console.WriteLine("Ship move");
-        }
+        public string Model { get; set; }
 
-        public void Park()
-        {
-            Console.WriteLine("Ship park");
-        }
+        public int Speed { get; set; }
 
-        public void Refuel()
-        {
-            Console.WriteLine("Ship refuel");
-        }
+        public int CurrentFuel { get; set; }
 
-        public void Repair()
-        {
-            Console.WriteLine("Ship repair");
-        }
+        public void Move() => Console.WriteLine("Ship move");
+
+        public void Park() => Console.WriteLine("Ship park");
+
+        public void Refuel() => Console.WriteLine("Ship refuel");
+
+        public void Repair() => Console.WriteLine("Ship repair");
+
+        public override string ToString() => string.Join(' ', "Ship", Model);
     }
 }

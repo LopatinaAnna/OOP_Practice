@@ -11,7 +11,8 @@ namespace OOP_Practice
             Plane plane = new Plane();
             plane.Move();
 
-            ICar car = new Car();
+            ICar car = new Car() { Model = "BMW X5" };
+            Console.WriteLine(car.ToString());
             car.Park();
             car.Repair();
 
