@@ -1,12 +1,19 @@
-﻿using System;
+﻿using OOP_Practice.Entities;
 
 namespace OOP_Practice
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Transport transport = new Transport();
+            transport.Move();
+
+            Plane plane = new Plane();
+            plane.Repair();
+
+            Transport car = new Car();
+            car.Park();
         }
     }
 }
