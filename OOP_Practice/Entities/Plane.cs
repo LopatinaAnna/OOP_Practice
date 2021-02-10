@@ -1,25 +1,26 @@
-﻿using System;
+﻿using OOP_Practice.Interfaces;
+using System;
 
 namespace OOP_Practice.Entities
 {
-    public class Plane : Transport
+    public class Plane : IPlane
     {
-        public override void Move()
+        public void Move()
         {
             Console.WriteLine("Plane move");
         }
 
-        public override void Park()
+        public void Park()
         {
             Console.WriteLine("Plane park");
         }
 
-        public override void Refuel()
+        public void Refuel()
         {
             Console.WriteLine("Plane refuel");
         }
 
-        public override void Repair()
+        public void Repair()
         {
             Console.WriteLine("Plane repair");
         }

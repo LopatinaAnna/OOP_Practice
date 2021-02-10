@@ -1,25 +1,26 @@
-﻿using System;
+﻿using OOP_Practice.Interfaces;
+using System;
 
 namespace OOP_Practice.Entities
 {
-    public class Car : Transport
+    public class Car : ICar
     {
-        public override void Move()
+        public void Move()
         {
             Console.WriteLine("Car move");
         }
 
-        public override void Park()
+        public void Park()
         {
             Console.WriteLine("Car park");
         }
 
-        public override void Refuel()
+        public void Refuel()
         {
             Console.WriteLine("Car refuel");
         }
 
-        public override void Repair()
+        public void Repair()
         {
             Console.WriteLine("Car repair");
         }
