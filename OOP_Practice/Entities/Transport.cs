@@ -2,7 +2,7 @@
 
 namespace OOP_Practice.Entities
 {
-    public class Transport
+    public abstract class Transport
     {
         public int Speed { get; set; }
 
@@ -20,5 +20,7 @@ namespace OOP_Practice.Entities
         {
             Console.WriteLine("Transport refuel");
         }
+
+        public abstract void Repair();
     }
 }

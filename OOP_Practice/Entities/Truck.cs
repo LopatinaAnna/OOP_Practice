@@ -1,9 +1,8 @@
-﻿using OOP_Practice.Interfaces;
-using System;
+﻿using System;
 
 namespace OOP_Practice.Entities
 {
-    public class Truck : Transport, IRepair
+    public class Truck : Transport
     {
         public override void Move()
         {
@@ -20,7 +19,7 @@ namespace OOP_Practice.Entities
             Console.WriteLine("Truck refuel");
         }
 
-        public void Repair()
+        public override void Repair()
         {
             Console.WriteLine("Truck repair");
         }

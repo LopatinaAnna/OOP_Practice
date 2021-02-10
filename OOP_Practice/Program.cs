@@ -1,4 +1,5 @@
 ﻿using OOP_Practice.Entities;
+using System;
 
 namespace OOP_Practice
 {
@@ -6,14 +7,31 @@ namespace OOP_Practice
     {
         private static void Main(string[] args)
         {
-            Transport transport = new Transport();
-            transport.Move();
-
             Plane plane = new Plane();
-            plane.Repair();
+            plane.Move();
 
             Transport car = new Car();
             car.Park();
+            car.Repair();
+
+            var transports = new Transport[]
+            {
+                new Car(),
+                new Ship(),
+                new Truck()
+            };
+
+            MoveAllTransport(transports);
+        }
+
+        private static void MoveAllTransport(Transport[] transports)
+        {
+            Console.WriteLine("Move all transports:");
+
+            foreach (var item in transports)
+            {
+                item.Move();
+            }
         }
     }
 }
