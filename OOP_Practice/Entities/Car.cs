@@ -11,13 +11,13 @@ namespace OOP_Practice.Entities
 
         public int CurrentFuel { get; set; }
 
-        public void Move() => Console.WriteLine("Car move");
+        public virtual void Move() => Console.WriteLine("Car move");
 
-        public void Park() => Console.WriteLine("Car park");
+        public virtual void Park() => Console.WriteLine("Car park");
 
-        public void Refuel() => Console.WriteLine("Car refuel");
+        public virtual void Refuel() => Console.WriteLine("Car refuel");
 
-        public void Repair() => Console.WriteLine("Car repair");
+        public virtual void Repair() => Console.WriteLine("Car repair");
 
         public override string ToString() => string.Join(' ', "Car", Model);
     }
