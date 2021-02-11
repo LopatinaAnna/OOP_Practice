@@ -1,10 +1,9 @@
-﻿using OOP_Practice.Interfaces;
-using System;
+﻿using System;
 
 namespace OOP_Practice.Entities
 {
-    public class Ship : Transport, IRepair
+    public class Ship : Transport
     {
-        public void Repair() => Console.WriteLine("Ship repair");
+        public override void Repair() => Console.WriteLine("Ship repair");
     }
 }

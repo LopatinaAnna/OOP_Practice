@@ -1,10 +1,9 @@
-﻿using OOP_Practice.Interfaces;
-using System;
+﻿using System;
 
 namespace OOP_Practice.Entities
 {
-    public class Car : Transport, IRepair
+    public class Car : Transport
     {
-        public virtual void Repair() => Console.WriteLine("Car repair");
+        public override void Repair() => Console.WriteLine("Car repair");
     }
 }

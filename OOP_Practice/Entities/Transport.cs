@@ -3,7 +3,7 @@ using System;
 
 namespace OOP_Practice.Entities
 {
-    public abstract class Transport : ITransport
+    public abstract class Transport : ITransport, IRepair
     {
         public string Model { get; set; }
 
@@ -16,6 +16,8 @@ namespace OOP_Practice.Entities
         public virtual void Park() => Console.WriteLine("Base park");
 
         public virtual void Refuel() => Console.WriteLine("Base refuel");
+
+        public abstract void Repair();
 
         public override string ToString() => string.Join(' ', GetType().Name, Model);
     }

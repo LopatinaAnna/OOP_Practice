@@ -1,12 +1,11 @@
-﻿using OOP_Practice.Interfaces;
-using System;
+﻿using System;
 
 namespace OOP_Practice.Entities
 {
-    public class Plane : Transport, IRepair
+    public class Plane : Transport
     {
         public void BaggageDrop() => Console.WriteLine("Baggage drop");
 
-        public void Repair() => Console.WriteLine("Plane repair");
+        public override void Repair() => Console.WriteLine("Plane repair");
     }
 }
