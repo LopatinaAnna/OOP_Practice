@@ -1,6 +1,6 @@
 ﻿namespace OOP_Practice.Interfaces
 {
-    public interface IShip : ITransport
+    public interface IRepair
     {
         void Repair();
     }

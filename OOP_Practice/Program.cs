@@ -11,13 +11,14 @@ namespace OOP_Practice
             Plane plane = new Plane();
             plane.Move();
 
-            ICar car = new Car() { Model = "BMW X5" };
+            Car car = new Car() { Model = "BMW X5" };
             Console.WriteLine(car.ToString());
             car.Park();
             car.Repair();
 
-            ITransport ship = new Ship();
+            ITransport ship = new Ship() { Model = "ShipModel" };
             ship.Refuel();
+            Console.WriteLine(ship.ToString());
 
             var transports = new ITransport[]
             {
